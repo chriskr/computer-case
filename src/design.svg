@@ -1,0 +1,46 @@
+<svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" width="455mm">
+<rect x="0" y="0" width="400" height="150" fill="hsla(220, 100%, 50%, .3"/>
+<g transform="translate(50, 30)" fill="none" stroke-width="0.1" stroke="black">
+<path d="
+    M 6 0 
+    L 294 0
+    A 6 6 0 0 1 300 6 
+    L 300 84
+    A 6 6 0 0 1 294 90
+    L 6 90
+    A 6 6 0 0 1 0 84
+    L 0 6
+    A 6 6 0 0 1 6 0
+    "
+    fill="white"
+    />
+<path d="
+    M 6 4 
+    L 294 4
+    A 2 2 0 0 1 296 6 
+    L 296 84
+    A 2 2 0 0 1 294 86
+    L 6 86
+    A 2 2 0 0 1 4 84
+    L 4 6
+    A 2 2 0 0 1 6 4
+    "
+    fill="hsla(220, 100%, 50%, .3"
+    />
+  <g transform="translate(14, 21)" >
+   <rect x="0" y="0" width="85" height="65" fill="white"/>
+  </g>
+  <g transform="translate(116, 80)" >
+   <rect x="0" y="0" width="170" height="1" fill="white"/>
+  </g>
+  <g transform="translate(111, 31)" >
+   <rect x="0" y="0" width="163" height="50" fill="white"/>
+  </g>
+
+</g>
+<!-- 
+
+    16.3 5 6
+-->
+</svg>
+

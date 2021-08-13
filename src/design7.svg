@@ -1,0 +1,134 @@
+<svg viewBox="0 0 450 340" 
+     xmlns="http://www.w3.org/2000/svg"  
+     width="455mm" 
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect x="0" y="0" width="450" height="340" fill="hsla(220, 100%, 50%, .3" />
+  <defs>
+    <circle id="dot" cx="0" cy="0" r="6" fill="hsla(220, 100%, 50%, .3" />
+    <g id="dots-line-1" >
+      <use xlink:href="#dot" x="0" y="0" />    
+      <use xlink:href="#dot" x="16" y="0" />    
+      <use xlink:href="#dot" x="32" y="0" />    
+      <use xlink:href="#dot" x="48" y="0" />    
+      <use xlink:href="#dot" x="64" y="0" /> 
+      <use xlink:href="#dot" x="80" y="0" />    
+      <use xlink:href="#dot" x="96" y="0" />    
+      <use xlink:href="#dot" x="112" y="0" />    
+      <use xlink:href="#dot" x="128" y="0" />    
+      <use xlink:href="#dot" x="144" y="0" />    
+      <!--
+
+      -->   
+        
+  
+    </g>
+    <g id="dots-line-2" >
+      <use xlink:href="#dot" x="0" y="0" />    
+      <use xlink:href="#dot" x="16" y="0" />    
+      <use xlink:href="#dot" x="32" y="0" />    
+      <use xlink:href="#dot" x="48" y="0" />    
+      <use xlink:href="#dot" x="64" y="0" />    
+      <use xlink:href="#dot" x="80" y="0" />  
+          <use xlink:href="#dot" x="96" y="0" />    
+      <use xlink:href="#dot" x="112" y="0" />   
+      <use xlink:href="#dot" x="128" y="0" />    
+      <!--
+      -->   
+     
+   
+    </g>
+    <g id="dots-lines">
+      <use xlink:href="#dots-line-1" x="0" y="0" />
+      <use xlink:href="#dots-line-2" x="8" y="14" />
+    </g>
+      <g id="grill">
+      <use xlink:href="#dots-line-2" x="8" y="14" />
+      <use xlink:href="#dots-lines" x="0" y="28" />
+      <use xlink:href="#dots-lines" x="0" y="56" />
+      <use xlink:href="#dots-lines" x="0" y="84" />
+
+      <use xlink:href="#dots-lines" x="0" y="112" />
+      <use xlink:href="#dots-lines" x="0" y="140" />
+      <!--
+      <use xlink:href="#dots-lines" x="0" y="168" />
+      -->
+
+    </g>
+
+
+  </defs>
+  <g transform="translate(50, 20)" fill="none" stroke-width="0.1" stroke="black">
+
+    <rect x="0" y="0" width="360" height="180" fill="white" />
+
+    <g transform="translate(24, 32)" opacity="0">
+      <rect x="0" y="0" width="76" height="68" />
+    </g>
+
+    <g transform="translate(20, 28)" opacity="0">
+      <rect x="0" y="0" width="80" height="72" />
+    </g>
+
+    <g transform="translate(14, 25)" opacity="0">
+      <rect x="0" y="0" width="85" height="175" />
+    </g>
+
+    <g transform="translate(20, 20)" opacity="0">
+      <rect x="0" y="0" width="140" height="140" />
+    </g>
+
+    <use xlink:href="#grill" x="29" y="14" transform="scale(.915)"/>
+  </g>
+
+  <g transform="translate(0, 200)">
+
+
+<g transform="translate(50, 30)" fill="none" stroke-width="0.1" stroke="black">
+<path d="
+    M 8 0 
+    L 352 0
+    A 8 8 0 0 1 360 8 
+    L 360 82
+    A 8 8 0 0 1 352 90
+    L 8 90
+    A 8 8 0 0 1 0 82
+    L 0 8
+    A 8 8 0 0 1 8 0
+    "
+    fill="white"
+    />
+<path d="
+    M 8 4 
+    L 352 4
+    A 4 4 0 0 1 356 8 
+    L 356 82
+    A 4 4 0 0 1 352 86
+    L 6 86
+    A 4 4 0 0 1 4 82
+    L 4 8
+    A 4 4 0 0 1 8 4
+    "
+    fill="hsla(220, 100%, 50%, .3"
+    />
+  <g transform="translate(24, 23)" >
+   <rect x="0" y="0" width="120" height="63" fill="white"/>
+  </g>
+  <g transform="translate(176, 79)" >
+   <rect x="0" y="0" width="170" height="2" fill="white"/>
+  </g>
+  <g transform="translate(171, 31)" >
+   <rect x="0" y="0" width="163" height="50" fill="white"/>
+  </g>
+
+</g>
+  </g>
+
+
+
+
+<!-- 
+
+    16.3 5 6
+-->
+</svg>
+

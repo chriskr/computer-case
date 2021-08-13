@@ -1,0 +1,66 @@
+<svg viewBox="0 0 400 240" 
+     xmlns="http://www.w3.org/2000/svg"  
+     width="455mm" 
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect x="0" y="0" width="400" height="240" fill="hsla(220, 100%, 50%, .3" />
+  <defs>
+    <circle id="dot" cx="0" cy="0" r="6" />
+    <g id="dots-line-1" >
+      <use xlink:href="#dot" x="0" y="0" />    
+      <use xlink:href="#dot" x="16" y="0" />    
+      <use xlink:href="#dot" x="32" y="0" />    
+      <use xlink:href="#dot" x="48" y="0" />    
+      <use xlink:href="#dot" x="64" y="0" />    
+      <use xlink:href="#dot" x="80" y="0" />    
+      <use xlink:href="#dot" x="96" y="0" />    
+      <use xlink:href="#dot" x="112" y="0" />    
+      <use xlink:href="#dot" x="128" y="0" />    
+      <use xlink:href="#dot" x="144" y="0" />    
+  
+    </g>
+    <g id="dots-line-2" >
+      <use xlink:href="#dot" x="0" y="0" />    
+      <use xlink:href="#dot" x="16" y="0" />    
+      <use xlink:href="#dot" x="32" y="0" />    
+      <use xlink:href="#dot" x="48" y="0" />    
+      <use xlink:href="#dot" x="64" y="0" />    
+      <use xlink:href="#dot" x="80" y="0" />    
+      <use xlink:href="#dot" x="96" y="0" />    
+      <use xlink:href="#dot" x="112" y="0" />    
+      <use xlink:href="#dot" x="128" y="0" />    
+   
+    </g>
+    <g id="dots-lines">
+      <use xlink:href="#dots-line-1" x="0" y="0" />
+      <use xlink:href="#dots-line-2" x="8" y="14" />
+    </g>
+      <g id="grill">
+      <use xlink:href="#dots-line-2" x="8" y="14" />
+      <use xlink:href="#dots-lines" x="0" y="28" />
+      <use xlink:href="#dots-lines" x="0" y="56" />
+      <use xlink:href="#dots-lines" x="0" y="84" />
+      <use xlink:href="#dots-lines" x="0" y="112" />
+      <use xlink:href="#dots-lines" x="0" y="140" />
+    </g>
+
+
+  </defs>
+  <g transform="translate(50, 20)" fill="none" stroke-width="0.1" stroke="black">
+    <g transform="translate(24, 24)" opacity="0">
+      <rect x="0" y="0" width="156" height="152" />
+    </g>
+    <rect x="0" y="0" width="300" height="200" />
+
+
+    <use xlink:href="#grill" x="120" y="16" />
+  </g>
+
+
+
+
+<!-- 
+
+    16.3 5 6
+-->
+</svg>
+
