@@ -1,0 +1,114 @@
+<svg 
+  xwidth="10414mm" xheight="6096mm"
+  viewBox="0 0 410 240" 
+  xmlns="http://www.w3.org/2000/svg"  
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  >
+  <!--
+    * 25.4
+  -->
+  <defs>  
+    <g id="long-whole-left">
+      <path d="
+        M 2.5 -10
+        L 2.5 10
+        A 2.5 2.5 0 0 1 0 12.5
+        L -19.5 12.5
+        A 2.5 2.5 0 0 1 -22 10
+        L -22 -10
+        A 2.5 2.5 0 0 1 -19.5 -12.5
+        L 0 -12.5
+        A 2.5 2.5 0 0 1 2.5 -10
+      "/>
+      
+    </g>
+  <g id="long-whole-right">
+      <path d="
+        M 2.5 -10
+        L 2.5 10
+        A 2.5 2.5 0 0 1 -2.5 10
+
+        L -2.5 -10
+        A 2.5 2.5 0 0 1 2.5 -10
+      "/>
+    </g>
+  </defs>
+  <!--
+  <rect x="0" y="0" width="410" height="240" fill="hsla(220, 100%, 50%, .3" />
+  -->
+
+  <g transform="translate(20, 20)" fill="none" stroke-width="0.1" stroke="black">
+    <g transform="translate(0, 0)" >
+      <!--
+      <rect x="0" y="0" width="32" height="200" stroke="red" />
+      -->
+
+      <circle cx="5.6" cy="35" r="2.5"/>
+      <circle cx="5.6" cy="165" r="2.5"/>
+    </g>
+    <g transform="translate(32, 0)" >
+      <!--
+      <rect x="0" y="0" width="10" height="200" stroke="red" />
+      -->
+      <!--
+
+      <line x1="5" y1="0" x2="5" y2="22.5" />
+      <line x1="5" y1="47.5" x2="5" y2="152.5" />
+      <line x1="5" y1="177.5" x2="5" y2="200" />
+      -->
+      <line x1="5" y1="0" x2="5" y2="200" stroke-dasharray="6 3 4 3" />
+    </g>
+    <g transform="translate(42, 0)" >
+      <!--
+      <rect x="0" y="0" width="284" height="200" stroke="red" />
+      <rect x="12" y="25" width="85" height="175"  stroke="red"/>
+      -->
+      
+      <use xlink:href="#long-whole-left" x="9.5" y="165"  />
+      <use xlink:href="#long-whole-left" x="9.5" y="35" />
+      <use xlink:href="#long-whole-right" x="99.5" y="35" />
+      <use xlink:href="#long-whole-right" x="99.5" y="165" />
+      <g transform="translate(114, 30)">
+        <!--
+        <rect x="0" y="0" width="170" height="170"  stroke="red"/>
+        -->
+        
+        <circle cx="6.35" cy="137.16" r="2.5"/>
+        <circle cx="6.35" cy="5.08" r="2.5"/>
+        <circle cx="163.83" cy="5.08" r="2.5"/>
+        <circle cx="163.83" cy="160.02" r="2.5"/>
+      </g>
+    </g>
+    <g transform="translate(326, 0)" >
+      <!--
+      <rect x="0" y="0" width="10" height="200" stroke="red" />
+      -->
+
+      <line x1="5" y1="0" x2="5" y2="200" stroke-dasharray="6 3 4 3" />
+    </g>
+
+    <g transform="translate(336, 0)" >
+      <!--
+      <rect x="0" y="0" width="32" height="200" stroke="red" />
+      -->
+
+      <circle cx="26.4" cy="35" r="2.5"/>
+      <circle cx="26.4" cy="165" r="2.5"/>
+      <circle cx="12" cy="20" r="7"/>
+
+    </g>
+
+    <path d="
+      M 1 0
+      L 367 0
+      A 1 1 0 0 1 368 1
+      L 368 199
+      A 1 1 0 0 1 367 200
+      L 1 200
+      A 1 1 0 0 1 0 199
+      L 0 1
+      A 1 1 0 0 1 1 0
+    "/>
+  </g>
+</svg>
+
