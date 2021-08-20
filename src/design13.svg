@@ -22,10 +22,10 @@
         id="long-whole-2"
         d="
         M 0 -6
-        L 8 -6
-        A 6 6 0 0 1 8 6
-        L -8 6
-        A 6 6 0 0 1 -8 -6
+        L 7.4 -6
+        A 6 6 0 0 1 7.4 6
+        L -7.4 6
+        A 6 6 0 0 1 -7.4 -6
         L 0 -6
 
         "
@@ -81,23 +81,23 @@
 
     <g id="dots-line-7" >
       <use xlink:href="#long-whole-2" x="0" y="0" />    
-      <use xlink:href="#long-whole-2" x="32" y="0" />    
-      <use xlink:href="#long-whole-2" x="64" y="0" />    
-      <use xlink:href="#long-whole-2" x="96" y="0" />    
-      <use xlink:href="#long-whole-2" x="130" y="0" />    
-      <use xlink:href="#long-whole-2" x="162" y="0" />    
-      <use xlink:href="#long-whole-2" x="194" y="0" />    
-      <use xlink:href="#long-whole-2" x="226" y="0" />    
+      <use xlink:href="#long-whole-2" x="30.8" y="0" />    
+      <use xlink:href="#long-whole-2" x="61.6" y="0" />    
+      <use xlink:href="#long-whole-2" x="92.4" y="0" />    
+      <use xlink:href="#long-whole-2" x="123.2" y="0" />    
+      <use xlink:href="#long-whole-2" x="154" y="0" />    
+      <use xlink:href="#long-whole-2" x="184.8" y="0" />    
+      <use xlink:href="#long-whole-2" x="215.6" y="0" />    
     </g>
 
     <g id="dots-line-8" >
       <use xlink:href="#long-whole-2" x="0" y="0" />    
-      <use xlink:href="#long-whole-2" x="32" y="0" />    
-      <use xlink:href="#long-whole-2" x="64" y="0" />    
-      <use xlink:href="#long-whole-2" x="96" y="0" />    
-      <use xlink:href="#long-whole-2" x="130" y="0" />    
-      <use xlink:href="#long-whole-2" x="162" y="0" />    
-      <use xlink:href="#long-whole-2" x="194" y="0" /> 
+      <use xlink:href="#long-whole-2" x="30.8" y="0" />    
+      <use xlink:href="#long-whole-2" x="61.6" y="0" />    
+      <use xlink:href="#long-whole-2" x="92.4" y="0" />    
+      <use xlink:href="#long-whole-2" x="123.2" y="0" />    
+      <use xlink:href="#long-whole-2" x="154" y="0" />    
+      <use xlink:href="#long-whole-2" x="184.8" y="0" />    
     </g>
 
     <g id="dots-line-9" >
@@ -105,7 +105,7 @@
       <use xlink:href="#half-long-whole-2" x="-32" y="0" />    
       <use xlink:href="#half-long-whole-3" x="258" y="0" />    
       <use xlink:href="#dots-line-7" x="0" y="0" />    
-      <use xlink:href="#dots-line-8" x="16" y="16" />     
+      <use xlink:href="#dots-line-8" x="15.4" y="16" />     
     </g>
 
     <g id="grill-9" >
@@ -237,7 +237,7 @@
   0.4
 
 -->
-    <rect x="0" y="0" width="300" height="200" fill="white" />
+    <rect x="0" y="0" width="280" height="210" fill="white" />
 
     <g transform="translate(24, 32)" opacity="0">
       <rect x="0" y="0" width="76" height="68" />
@@ -253,6 +253,10 @@
 
     <g transform="translate(0, 0)" opacity="0">
       <rect x="23" y="30" width="254" height="76" />
+    </g>
+
+    <g transform="translate(0, 0)" opacity="0">
+      <rect x="0" y="0" width="18.5" height="210" stroke="red" />
     </g>
 
     <g transform="translate(200, 25)" opacity="0">
@@ -272,7 +276,7 @@
     </g>
     </g>
   <!---->
-    <use xlink:href="#grill-9" x="37" y="35" transform="scale(1.0)"/>
+    <use xlink:href="#grill-9" x="32" y="35" transform="scale(1.0)"/>
   <!---->
 
   </g>
@@ -286,10 +290,10 @@
 -->
 <path d="
     M 8 10 
-    L 292 10
-    A 8 8 0 0 1 300 18 
-    L 300 82
-    A 8 8 0 0 1 292 90
+    L 272 10
+    A 8 8 0 0 1 280 18 
+    L 280 82
+    A 8 8 0 0 1 272 90
     L 8 90
     A 8 8 0 0 1 0 82
     L 0 18
@@ -299,10 +303,10 @@
     />
 <path d="
     M 8 14 
-    L 292 14
-    A 4 4 0 0 1 296 18 
-    L 296 82
-    A 4 4 0 0 1 292 86
+    L 272 14
+    A 4 4 0 0 1 276 18 
+    L 276 82
+    A 4 4 0 0 1 272 86
     L 8 86
     A 4 4 0 0 1 4 82
     L 4 18
@@ -312,13 +316,13 @@
     />
   <path d="M 0 50 L 4 50"/>
   <path d="M 296 50 L 300 50"/>
-  <g transform="translate(20, 21)" >
+  <g transform="translate(10.5, 21)" >
    <rect x="0" y="0" width="85" height="65" fill="white"/>
   </g>
-  <g transform="translate(122, 79)" >
+  <g transform="translate(102, 79)" >
    <rect x="0" y="0" width="170" height="2" fill="white"/>
   </g>
-  <g transform="translate(117, 31)" >
+  <g transform="translate(97, 31)" >
    <rect x="0" y="0" width="163" height="50" fill="white"/>
   </g>
 
@@ -326,8 +330,8 @@
   </g>
 
   <defs>
-    <g id="screw" fill="white" stroke-width="0.1" stroke="black">
 
+    <g id="screw" fill="white" stroke-width="0.1" stroke="black">
       <circle cx="0" cy="0" r="4" />
       <path d="
       M 1.00 -1.732 
