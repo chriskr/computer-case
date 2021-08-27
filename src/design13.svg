@@ -509,5 +509,11 @@
 
     16.3 5 6
 -->
+
+<script >
+// <![CDATA[
+alert(99)
+// ]]>
+</script>
 </svg>
 
