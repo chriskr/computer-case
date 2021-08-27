@@ -33,6 +33,10 @@
     fill: hsla(15, 10%, 30%, 1);
     font-family: 'Play', sans-serif;
   }
+
+  .bright {
+    fill: hsla(30, 70%, 95%, 1);
+  }
 </style>
 
 <svg viewBox="0 0 300 100" width="350mm">
@@ -125,7 +129,7 @@
       stroke="red"
       opacity="0"
     />
-
+<!--
     <rect
       x="8"
       y="32"
@@ -138,6 +142,70 @@
       stroke="hsla(15, 10%, 30%, 1)"
       stroke-width=".2"
     />
+
+    <rect
+    x="28"
+    y="24"
+    width="4"
+    height="20"
+    class="bright"
+    stroke-width="0"
+  />
+
+  <rect
+  x="36"
+  y="36"
+  width="4"
+  height="20"
+  class="bright"
+  stroke-width="0"
+/>
+
+<rect
+x="44"
+y="24"
+width="4"
+height="20"
+class="bright"
+stroke-width="0"
+/>
+<rect
+x="52"
+y="36"
+width="4"
+height="20"
+class="bright"
+stroke-width="0"
+/>
+-->
+<g transform="translate(4, 32)">
+
+  <path fill="hsla(30, 70%, 75%, 1)" fill="hsla(15, 10%, 30%, 1)" d="
+    M 12 0
+    
+    A 8 8 0 0 1 20 8
+    L 20 10
+    A 2 2 0 0 0 24 10
+    L 24 6
+    A 6 6 0 0 1 36 6
+    L 36 10
+    A 2 2 0 0 0 40 10
+    L 40 6
+    A 6 6 0 0 1 46 0
+    L 56 0
+    A 8 8 0 1 1 48 8
+    L 48 6
+    A 2 2 0 0 0 44 6
+    L 44 10
+    A 6 6 0 0 1 32 10
+    L 32 6
+    A 2 2 0 0 0 28 6
+    L 28 10
+    A 6 6 0 0 1 22 16
+    L 12 16
+    A 8 8 0 0 1 12 0
+  "/>
+</g>
 
     <g
       transform="translate(33, 37) scale(0.055)"
@@ -175,8 +243,9 @@
       2021
     </text>
     <g
-      transform="translate(64.5, 35.5) scale(0.08)"
+      transform="translate(55, 35) scale(0.1)"
       fill-rule="evenodd"
+      fill="hsla(15, 10%, 30%, 1)"
       fill="hsla(30, 70%, 95%, 1)"
     >
       <path
