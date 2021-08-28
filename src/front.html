@@ -21,12 +21,12 @@
     font-weight: 900;
   }
   .small-number {
-    font-family: 'Play', sans-serif;
-    font-size: 4px;
+    xfont-family: 'Play', sans-serif;
+    font-size: 3px;
     fill: hsla(15, 10%, 30%, 1);
-    fill: hsla(30, 70%, 95%, 1);
-    stroke: hsla(30, 70%, 95%, 1);
-    font-weight: 400;
+    xfill: hsla(30, 70%, 95%, 1);
+    xstroke: hsla(30, 70%, 95%, 1);
+    font-weight: 300;
   }
   .elephant {
     font-size: 9px;
@@ -57,9 +57,27 @@
           "
       />
     </g>
+
+    <g id="edge">
+      <path
+        stroke-width="0"
+        d="
+          M 0 0 
+          L .8 0 0 -2 -.8 0 0 0
+          "
+      />
+      <g id="star">
+        <use href="#edge" x="0" y="0" transform="rotate(0)" />
+        <use href="#edge" x="0" y="0" transform="rotate(72)" />
+        <use href="#edge" x="0" y="0" transform="rotate(144)" />
+        <use href="#edge" x="0" y="0" transform="rotate(216)" />
+        <use href="#edge" x="0" y="0" transform="rotate(288)" />
+      </g>
+    </g>
   </defs>
 
   <g
+    name="outer-frame"
     transform="translate(10, 10)"
     fill="none"
     stroke-width="0.1"
@@ -109,7 +127,73 @@
       fill="hsla(30, 70%, 75%, 1)"
     />
 
-    <rect x="80" y="4" width="4" height="72" fill="hsla(15, 10%, 30%, 1)" />
+    <rect
+      x="80"
+      y="4"
+      width="4"
+      height="72"
+      fill="hsla(15, 10%, 30%, 1)"
+      opacity="0"
+    />
+
+    <g transform="translate(82, 40)">
+      <path
+        fill="hsla(30, 70%, 75%, 1)"
+        stroke-width="0"
+        d="
+       M 4 -10
+       L 2 -10
+       A 2 2 0 0 1 0 -8
+       L 0 8
+       A 2 2 0 0 1 2 10
+       L 4 10
+       
+      "
+      />
+      <path
+        name="bubble"
+        fill="hsla(30, 70%, 75%, 1)"
+        xstroke-width=".5"
+        xstroke="hsla(15, 10%, 30%, 1)"
+        d="
+       M 2 -10
+       A 2 2 0 0 1 0 -8
+       A 8 8 0 0 0 0 8
+       A 2 2 0 0 1 2 10
+       
+      "
+      />
+    </g>
+
+    <g transform="translate(88, 4)">
+      <path
+        name="border"
+        fill="hsla(15, 10%, 30%, 1)"
+        stroke-width="0"
+        d="
+       M -4 0
+       L -4 26
+       A 2 2 0 0 1 -6 28
+       A 8 8 0 0 0 -6 44
+       A 2 2 0 0 1 -4 46
+       L -4 72 -2 72 -2 46
+
+       A 4 4 0 0 0 -6 42
+       A 6 6 0 0 1 -6 30
+       A 4 4 0 0 0 -2 26
+       L -2 0
+       
+      "
+      />
+    </g>
+
+    <use
+      href="#star"
+      x="41"
+      y="20"
+      transform="scale(2)"
+      fill="hsla(15, 10%, 30%, 1)"
+    />
 
     <circle
       cx="210"
@@ -129,7 +213,7 @@
       stroke="red"
       opacity="0"
     />
-<!--
+    <!--
     <rect
       x="8"
       y="32"
@@ -178,9 +262,11 @@ class="bright"
 stroke-width="0"
 />
 -->
-<g transform="translate(4, 32)">
-
-  <path fill="hsla(30, 70%, 75%, 1)" fill="hsla(15, 10%, 30%, 1)" d="
+    <g transform="translate(4, 32)">
+      <path
+        fill="hsla(30, 70%, 75%, 1)"
+        fill="hsla(15, 10%, 30%, 1)"
+        d="
     M 12 0
     
     A 8 8 0 0 1 20 8
@@ -204,13 +290,16 @@ stroke-width="0"
     A 6 6 0 0 1 22 16
     L 12 16
     A 8 8 0 0 1 12 0
-  "/>
-</g>
+  "
+      />
+    </g>
 
     <g
-      transform="translate(33, 37) scale(0.055)"
+      name="logo"
+      transform="translate(121, 15) scale(0.08)"
+      fill="hsla(15, 10%, 30%, 1)"
       fill="hsla(30, 70%, 95%, 1)"
-      opacity="0"
+      opacity="1"
     >
       <path
         d="M 108 24
@@ -234,11 +323,11 @@ stroke-width="0"
       />
     </g>
     <text
-      x="18"
-      y="42"
+      x="14"
+      y="59"
       class="small-number"
       transform="scale(2.3 1)"
-      opacity="0"
+      opacity="1"
     >
       2021
     </text>
@@ -363,6 +452,53 @@ stroke-width="0"
               132.03  424.94  133.51  408.47  135     392"
         />
       </g>
+    </g>
+    <g transform="translate(116, 62)">
+      <circle cx="0" cy="0" r="3" fill="hsla(30, 70%, 95%, 1)" />
+      <circle cx="12" cy="0" r="3" fill="hsla(30, 70%, 95%, 1)" />
+      <circle cx="24" cy="0" r="3" fill="hsla(30, 70%, 95%, 1)" />
+    </g>
+
+    <g transform="translate(30, 20)" fill="hsla(15, 10%, 30%, 1)">
+      <use href="#star" x="0" y="0" />
+      <use href="#star" x="8" y="0" />
+      <use href="#star" x="16" y="0" />
+    </g>
+
+    <g fill="hsla(15, 10%, 30%, 1)" transform="translate(37,68) scale(0.04)">
+      <path
+        d="M  17 100
+                 L  17  34 
+                    50   0
+                    83  34
+                    83 100
+                    56 100
+                    56  76
+                    44  76
+                    44 100
+                 Z"
+      />
+    </g>
+
+    <g
+      name="house-big"
+      fill="hsla(30, 70%, 95%, 1)"
+      stroke-width="0.4"
+      xstroke="black"
+      transform="translate(145, 33) scale(0.28) rotate(-90)"
+    >
+      <path
+        d="M  17 100
+                 L  17  34 
+                    50   0
+                    83  34
+                    83 100
+                    56 100
+                    56  76
+                    44  76
+                    44 100
+                 Z"
+      />
     </g>
   </g>
 </svg>
