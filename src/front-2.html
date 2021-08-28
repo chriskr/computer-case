@@ -98,6 +98,7 @@
       fill="white"
     />
     <path
+      name="inner-frame"
       d="
             M 8 4 
             L 272 4
@@ -133,69 +134,10 @@
       width="4"
       height="72"
       fill="hsla(15, 10%, 30%, 1)"
-      opacity="0"
+      opacity="1"
     />
-
-    <g transform="translate(82, 40)">
-      <path
-        fill="hsla(30, 70%, 75%, 1)"
-        stroke-width="0"
-        d="
-       M 4 -10
-       L 2 -10
-       A 2 2 0 0 1 0 -8
-       L 0 8
-       A 2 2 0 0 1 2 10
-       L 4 10
-       
-      "
-      />
-      <path
-        name="bubble"
-        fill="hsla(30, 70%, 75%, 1)"
-        xstroke-width=".5"
-        xstroke="hsla(15, 10%, 30%, 1)"
-        d="
-       M 2 -10
-       A 2 2 0 0 1 0 -8
-       A 8 8 0 0 0 0 8
-       A 2 2 0 0 1 2 10
-       
-      "
-      />
-    </g>
-
-    <g transform="translate(88, 4)">
-      <path
-        name="border"
-        fill="hsla(15, 10%, 30%, 1)"
-        stroke-width="0"
-        d="
-       M -4 0
-       L -4 26
-       A 2 2 0 0 1 -6 28
-       A 8 8 0 0 0 -6 44
-       A 2 2 0 0 1 -4 46
-       L -4 72 -2 72 -2 46
-
-       A 4 4 0 0 0 -6 42
-       A 6 6 0 0 1 -6 30
-       A 4 4 0 0 0 -2 26
-       L -2 0
-       
-      "
-      />
-    </g>
-
-    <use
-      href="#star"
-      x="41"
-      y="20"
-      transform="scale(2)"
-      fill="hsla(15, 10%, 30%, 1)"
-    />
-
     <circle
+      name="big-circle"
       cx="210"
       cy="40"
       r="23"
@@ -213,90 +155,58 @@
       stroke="red"
       opacity="0"
     />
-    <!--
-    <rect
-      x="8"
-      y="32"
-      rx="8"
-      ry="8"
-      width="68"
-      height="16"
-      fill="hsla(15, 10%, 30%, 1)"
-      fill="hsla(15, 10%, 30%, 0.05)"
-      stroke="hsla(15, 10%, 30%, 1)"
-      stroke-width=".2"
-    />
 
-    <rect
-    x="28"
-    y="24"
-    width="4"
-    height="20"
-    class="bright"
-    stroke-width="0"
-  />
-
-  <rect
-  x="36"
-  y="36"
-  width="4"
-  height="20"
-  class="bright"
-  stroke-width="0"
-/>
-
-<rect
-x="44"
-y="24"
-width="4"
-height="20"
-class="bright"
-stroke-width="0"
-/>
-<rect
-x="52"
-y="36"
-width="4"
-height="20"
-class="bright"
-stroke-width="0"
-/>
--->
     <g transform="translate(4, 32)">
       <path
+        name="snake"
         fill="hsla(30, 70%, 75%, 1)"
         fill="hsla(15, 10%, 30%, 1)"
         d="
-    M 12 0
-    
-    A 8 8 0 0 1 20 8
-    L 20 10
-    A 2 2 0 0 0 24 10
-    L 24 6
-    A 6 6 0 0 1 36 6
-    L 36 10
-    A 2 2 0 0 0 40 10
-    L 40 6
-    A 6 6 0 0 1 46 0
-    L 56 0
-    A 8 8 0 1 1 48 8
-    L 48 6
-    A 2 2 0 0 0 44 6
-    L 44 10
-    A 6 6 0 0 1 32 10
-    L 32 6
-    A 2 2 0 0 0 28 6
-    L 28 10
-    A 6 6 0 0 1 22 16
-    L 12 16
-    A 8 8 0 0 1 12 0
+            M 12 0
+            
+            A 8 8 0 0 1 20 8
+            L 20 10
+            A 2 2 0 0 0 24 10
+            L 24 6
+            A 6 6 0 0 1 36 6
+            L 36 10
+            A 2 2 0 0 0 40 10
+            L 40 6
+            A 6 6 0 0 1 46 0
+            L 56 0
+            A 8 8 0 1 1 48 8
+            L 48 6
+            A 2 2 0 0 0 44 6
+            L 44 10
+            A 6 6 0 0 1 32 10
+            L 32 6
+            A 2 2 0 0 0 28 6
+            L 28 10
+            A 6 6 0 0 1 22 16
+            L 12 16
+            A 8 8 0 0 1 12 0
   "
       />
     </g>
 
+    <circle
+      cx="82"
+      cy="40"
+      r="5"
+      fill="hsla(15, 10%, 30%, 1)"
+      stroke-width="0"
+    />
+    <use
+      href="#star"
+      x="54.5"
+      y="26.7"
+      fill="hsla(30, 70%, 95%, 1)"
+      transform="scale(1.5)"
+    />
+
     <g
       name="logo"
-      transform="translate(121, 15) scale(0.08)"
+      transform="translate(122, 14) scale(0.12)"
       fill="hsla(15, 10%, 30%, 1)"
       fill="hsla(30, 70%, 95%, 1)"
       opacity="1"
@@ -358,6 +268,7 @@ stroke-width="0"
 
     <use xlink:href="#screw" x="16" y="40" />
     <use xlink:href="#screw" x="264" y="40" />
+
     <g
       fill="hsla(30, 70%, 95%, 1)"
       opacity="1"
@@ -479,6 +390,7 @@ stroke-width="0"
                  Z"
       />
     </g>
+    <!--
     <g
       name="house-big"
       fill="hsla(30, 70%, 95%, 1)"
@@ -486,18 +398,7 @@ stroke-width="0"
       xstroke="black"
       transform="translate(128, 29) scale(0.5) rotate(-90)"
     >
-      <!--
 
-      <path
-      d="M  17 100
-      L  17  34 
-      50   0
-      50  76
-      44  76
-      44 100
-      Z"
-      />
-    -->
 
       <path
         d="M  50   0
@@ -513,28 +414,29 @@ stroke-width="0"
           "
       />
     </g>
-    <!--
 
-  <g
-  name="house-big"
-  fill="hsla(30, 70%, 95%, 1)"
-  stroke-width="0.4"
-  xstroke="black"
-  transform="translate(145, 33) scale(0.28) rotate(-90)"
-  >
-  <path
-  d="M  17 100
-  L  17  34 
-  50   0
-  83  34
-  83 100
-  56 100
-  56  76
-  44  76
-  44 100
-  Z"
-  />
-</g>
--->
+    -->
+
+    <g
+      name="house-big"
+      fill="hsla(30, 70%, 95%, 1)"
+      stroke-width="0.4"
+      xstroke="black"
+      transform="translate(156, 49) scale(0.20) "
+    >
+      <path
+        d="
+            M  17 100
+            L  17  34 
+                50   0
+                83  34
+                83 100
+                56 100
+                56  76
+                44  76
+                44 100
+            Z"
+      />
+    </g>
   </g>
 </svg>
