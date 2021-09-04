@@ -13,7 +13,7 @@
 />
 <style>
   body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   .number {
     font-size: 36px;
@@ -21,7 +21,7 @@
     font-weight: 900;
   }
   .small-number {
-    xfont-family: "Play", sans-serif;
+    xfont-family: 'Play', sans-serif;
     font-size: 3px;
     fill: hsla(15, 10%, 30%, 1);
     xfill: hsla(30, 70%, 95%, 1);
@@ -31,7 +31,8 @@
   .elephant {
     font-size: 9px;
     fill: hsla(15, 10%, 30%, 1);
-    font-family: "Play", sans-serif;
+    stroke: hsla(15, 10%, 30%, 1);
+    font-family: 'Play', sans-serif;
   }
 
   .bright {
@@ -39,7 +40,7 @@
   }
 </style>
 
-<svg viewBox="0 0 300 100" width="350mm">
+<svg viewBox="0 0 300 100" width="341mm">
   <defs>
     <g id="screw" fill="white" stroke-width="0.1" stroke="black">
       <circle cx="0" cy="0" r="4" />
@@ -86,10 +87,10 @@
     <path
       d="
             M 8 0 
-            L 272 0
-            A 8 8 0 0 1 280 8 
-            L 280 72
-            A 8 8 0 0 1 272 80
+            L 282 0
+            A 8 8 0 0 1 290 8 
+            L 290 72
+            A 8 8 0 0 1 282 80
             L 8 80
             A 8 8 0 0 1 0 72
             L 0 8
@@ -101,10 +102,10 @@
       name="inner-frame"
       d="
             M 8 4 
-            L 272 4
-            A 4 4 0 0 1 276 8 
-            L 276 72
-            A 4 4 0 0 1 272 76
+            L 282 4
+            A 4 4 0 0 1 286 8 
+            L 286 72
+            A 4 4 0 0 1 282 76
             L 8 76
             A 4 4 0 0 1 4 72
             L 4 8
@@ -117,19 +118,21 @@
     <path d="M 276 40 L 280 40" />
 
     <path
+      name="right-pane"
       d="
-            M 84 4 
-            L 272 4
-            A 4 4 0 0 1 276 8 
-            L 276 72
-            A 4 4 0 0 1 272 76
-            L 84 76 84 4
+            M 80 4 
+            L 282 4
+            A 4 4 0 0 1 286 8 
+            L 286 72
+            A 4 4 0 0 1 282 76
+            L 80 76 80 4
             "
       fill="hsla(30, 70%, 75%, 1)"
     />
 
     <rect
-      x="80"
+      name="border"
+      x="76"
       y="4"
       width="4"
       height="72"
@@ -146,17 +149,7 @@
       stroke="hsla(15, 10%, 30%, 1)"
     />
 
-    <rect
-      x="0"
-      y="36"
-      width="280"
-      height="8"
-      fill="none"
-      stroke="red"
-      opacity="0"
-    />
-
-    <g transform="translate(4, 32)">
+    <g transform="translate(2, 32)">
       <path
         name="snake"
         fill="hsla(30, 70%, 75%, 1)"
@@ -190,15 +183,16 @@
     </g>
 
     <circle
-      cx="82"
+      cx="78"
       cy="40"
       r="5"
       fill="hsla(15, 10%, 30%, 1)"
       stroke-width="0"
     />
     <use
+      name="small-star"
       href="#star"
-      x="54.5"
+      x="52"
       y="26.7"
       fill="hsla(30, 70%, 95%, 1)"
       transform="scale(1.5)"
@@ -206,7 +200,7 @@
 
     <g
       name="logo"
-      transform="translate(122, 14) scale(0.12)"
+      transform="translate(113, 13) scale(0.12)"
       fill="hsla(15, 10%, 30%, 1)"
       fill="hsla(30, 70%, 95%, 1)"
       opacity="1"
@@ -233,7 +227,7 @@
       />
     </g>
     <text
-      x="14"
+      x="12.5"
       y="59"
       class="small-number"
       transform="scale(2.3 1)"
@@ -242,7 +236,8 @@
       2021
     </text>
     <g
-      transform="translate(55, 35) scale(0.1)"
+      name="wiking"
+      transform="translate(53, 35) scale(0.1)"
       fill-rule="evenodd"
       fill="hsla(15, 10%, 30%, 1)"
       fill="hsla(30, 70%, 95%, 1)"
@@ -259,66 +254,23 @@
       />
     </g>
 
-    <path d="M 0 40 L 100 40" stroke="red" opacity="0" />
-
     <text x="200" y="53.7" class="number">7</text>
-    <text x="40.7" y="42.5" transform="scale(2.3 1)" class="elephant">
+    <text x="40" y="42.5" transform="scale(2.3 1)" class="elephant">
       elephant
     </text>
 
-    <use xlink:href="#screw" x="16" y="40" />
-    <use xlink:href="#screw" x="264" y="40" />
+    <use xlink:href="#screw" x="14" y="40" />
+    <use xlink:href="#screw" x="276" y="40" />
 
     <g
+      name="shape"
       fill="hsla(30, 70%, 95%, 1)"
       opacity="1"
-      transform="translate(227, 133.5) rotate(-90) scale(2.4)"
+      transform="translate(227, 142.5) rotate(-90) scale(2.4)"
       stroke="black"
     >
-      <g transform="translate(10, 7) scale(0.045)" opacity="0">
-        <path
-          d="M 108 24
-                 A  60 60 143 0 0   0  60
-                    40 40  90 0 1  40  20
-                    10 10 180 0 1  40  40
-                    20 20 240 1 0  60  60
-                    10 10 180 0 1  80  60
-                    20 20  90 0 0 100  80
-                    10 10 143 0 1 108  96
-                    60 60  74 0 0 108  24
-                    10 10 143 0 1 100  40
-                    10 10 217 1 1 108  24"
-        />
-        <path
-          d="M 108 96
-                 A  10 10  37 0 1 100 100
-                    40 40  69 0 1  70  86.6
-                    40 40 159 0 1   0  60
-                    60 60 143 0 0 108  96"
-        />
-      </g>
-
       <g
-        transform="translate(18, 6) scale(0.07)"
-        fill-rule="evenodd"
-        opacity="0"
-      >
-        <path
-          d="M  20    10
-                   A  37    37   1 1 0 80 10
-                      45    45   1 1 1 20 10"
-        />
-        <path
-          d="M  20    90
-                   A  30.1  30.1 1 1 1 80 90
-                     145   145   1 0 1 20 90"
-        />
-      </g>
-      <!--
-                fill="hsl(30, 56%, 14%)"
-    -->
-      <g
-        transform="translate(27, 2.5) scale(0.02)"
+        transform="translate(27, 3.5) scale(0.025)"
         fill-rule="evenodd"
         stroke-width="2"
       >
@@ -364,19 +316,23 @@
         />
       </g>
     </g>
-    <g transform="translate(116, 62)">
+    <g transform="translate(108, 60)">
       <circle cx="0" cy="0" r="3" fill="hsla(30, 70%, 95%, 1)" />
       <circle cx="12" cy="0" r="3" fill="hsla(30, 70%, 95%, 1)" />
       <circle cx="24" cy="0" r="3" fill="hsla(30, 70%, 95%, 1)" />
     </g>
 
-    <g transform="translate(30, 20)" fill="hsla(15, 10%, 30%, 1)">
+    <g transform="translate(28, 20)" fill="hsla(15, 10%, 30%, 1)">
       <use href="#star" x="0" y="0" />
       <use href="#star" x="8" y="0" />
       <use href="#star" x="16" y="0" />
     </g>
 
-    <g fill="hsla(15, 10%, 30%, 1)" transform="translate(37,68) scale(0.04)">
+    <g
+      name="house"
+      transform="translate(34, 68) scale(0.04)"
+      fill="hsla(15, 10%, 30%, 1)"
+    >
       <path
         d="M  17 100
                  L  17  34 
@@ -390,39 +346,13 @@
                  Z"
       />
     </g>
-    <!--
-    <g
-      name="house-big"
-      fill="hsla(30, 70%, 95%, 1)"
-      stroke-width="0.2"
-      xstroke="black"
-      transform="translate(128, 29) scale(0.5) rotate(-90)"
-    >
-
-
-      <path
-        d="M  50   0
-         L  17  34
-            17 100
-            44 100
-            44  76
-            50  76
-             
-             
-             
-             
-          "
-      />
-    </g>
-
-    -->
 
     <g
       name="house-big"
       fill="hsla(30, 70%, 95%, 1)"
       stroke-width="0.4"
       xstroke="black"
-      transform="translate(156, 49) scale(0.20) "
+      transform="translate(155, 49) scale(0.20) "
     >
       <path
         d="
@@ -437,6 +367,19 @@
                 44 100
             Z"
       />
+    </g>
+    <g name="measure" stroke="red" stroke-width="0.1" fill="none" opacity="1">
+      <rect x="6" y="30" width="60" height="20" />
+      <line x1="36" y1="0" x2="36" y2="100" />
+      <line x1="78" y1="0" x2="78" y2="100" />
+      <line x1="120" y1="0" x2="120" y2="100" />
+      <line x1="165" y1="0" x2="165" y2="100" />
+      <line x1="210" y1="0" x2="210" y2="100" />
+      <line x1="290" y1="0" x2="290" y2="100" />
+
+      <line x1="0" y1="20" x2="300" y2="20" />
+      <line x1="0" y1="40" x2="300" y2="40" />
+      <line x1="0" y1="60" x2="300" y2="60" />
     </g>
   </g>
 </svg>
