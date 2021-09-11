@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<title>front</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
+  rel="stylesheet"
+/>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Play&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(0, 0%, 0%);
+  }
+
+  body {
+    margin: 0 auto;
+    text-align: center;
+    width: 594mm;
+    height: 840mm;
+    position: relative;
+  }
+
+  body::before,
+  body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 253%;
+    background-position: 43% 0%;
+    background-image: url('./richard-jacobs-8oenpCXktqQ-unsplash.jpg');
+  }
+
+  body::before {
+    filter: url(#filter-sample-2);
+  }
+
+  body::after {
+    filter: url(#filter-sample-4);
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  }
+
+  #circle-7,
+  #snake-7,
+  #elephant-7,
+  #text-7,
+  #text-9,
+  #measure {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  #circle-7 {
+    top: 3.5%;
+  }
+
+  #snake-7 {
+    top: 28.7%;
+  }
+
+  #elephant-7 {
+    top: 54.7%;
+  }
+
+  #text-7 {
+    top: 79%;
+  }
+
+  #text-9 {
+    top: 55%;
+  }
+
+  #measure {
+    height: 100%;
+  }
+
+  #filter-container,
+  #filter-container-2 {
+    display: none;
+  }
+
+  .number {
+    font-size: 36px;
+    font-weight: 900;
+  }
+  .small-number {
+    font-size: 3px;
+    font-weight: 300;
+  }
+  .elephant {
+    font-size: 9px;
+    font-family: 'Play', sans-serif;
+  }
+
+  .bright {
+    fill: hsla(30, 70%, 95%, 1);
+  }
+  .dark-orange {
+    fill: hsla(30, 70%, 70%, 1);
+  }
+  .dark {
+    fill: hsla(30, 10%, 30%, 1);
+  }
+  .dark-border {
+    stroke: hsla(30, 10%, 30%, 1);
+  }
+</style>
+
+<svg id="filter-container">
+  <filter id="filter-sample">
+    <feColorMatrix
+      type="matrix"
+      values="0.299 0.587 0.114 0.200 0.000 0.299 0.587 0.114 0.129 0.000 0.299 0.587 0.114 0.059 0.000 0.000 0.000 0.000 1.000 0.000"
+    ></feColorMatrix>
+  </filter>
+
+  <filter id="filter-sample-2">
+    <feColorMatrix
+      type="matrix"
+      values="0.299 0.587 0.114 0.078 0.000 0.299 0.587 0.114 0.424 0.000 0.299 0.587 0.114 0.769 0.000 0.000 0.000 0.000 1.000 0.000"
+    ></feColorMatrix>
+  </filter>
+
+  <filter id="filter-sample-3">
+    <feColorMatrix
+      type="matrix"
+      values="0.299 0.587 0.114 0.702 0.000 0.299 0.587 0.114 0.384 0.000 0.299 0.587 0.114 0.071 0.000 0.000 0.000 0.000 1.000 0.000"
+    ></feColorMatrix>
+  </filter>
+
+  <filter id="filter-sample-4">
+    <feColorMatrix
+      type="matrix"
+      values="0.299 0.587 0.114 0.149 0.000 0.299 0.587 0.114 0.082 0.000 0.299 0.587 0.114 0.016 0.000 0.000 0.000 0.000 1.000 0.000"
+    ></feColorMatrix>
+  </filter>
+
+  <defs>
+    <g
+      id="screw"
+      transform="scale(.85)"
+      fill="white"
+      stroke-width="0.1"
+      stroke="black"
+    >
+      <circle cx="0" cy="0" r="4" />
+      <path
+        d="
+          M 1.00 -1.732 
+          L 2 0
+            1.00 1.732 
+            -1.00 1.732 
+            -2 0
+            -1.00 -1.732
+            1.00 -1.732
+              
+            
+          "
+      />
+    </g>
+
+    <g id="edge">
+      <path
+        stroke-width="0"
+        d="
+          M 0 0 
+          L .8 0 0 -2 -.8 0 0 0
+          "
+      />
+      <g id="star">
+        <use href="#edge" x="0" y="0" transform="rotate(0)" />
+        <use href="#edge" x="0" y="0" transform="rotate(72)" />
+        <use href="#edge" x="0" y="0" transform="rotate(144)" />
+        <use href="#edge" x="0" y="0" transform="rotate(216)" />
+        <use href="#edge" x="0" y="0" transform="rotate(288)" />
+      </g>
+    </g>
+    <g id="star-2">
+      <circle
+        cx="0"
+        cy="0"
+        r="5"
+        fill="hsla(0, 0%, 0%, .6)"
+        stroke-width=".1"
+        stroke="black"
+      />
+      <g transform="scale(2)">
+        <use href="#star" x="0" y="0" transform="scale(1.1)" fill="black" />
+        <use href="#star" x="0" y="0" transform="scale(1)" fill="white" />
+      </g>
+    </g>
+  </defs>
+</svg>
+
+<svg viewBox="0 0 300 120" id="circle-7">
+  <g transform="translate(150, 60) scale(1.2)">
+    <path
+      fill-rule="evenodd"
+      fill="hsla(0, 0%, 0%, .3)"
+      stroke-width="0.5"
+      stroke="hsla(0, 0%, 0%, .3)"
+      d=" 
+      M 0 -36 
+      A 36 36 0 1 0 0.0001 -36 
+      Z 
+      M 0 -30 
+      A 30 30 0 1 0 0.0001 -30 
+      Z "
+    />
+    <text
+      x="-15"
+      y="20"
+      fill="hsla(0, 0%, 0%, .3)"
+      font-size="53"
+      font-weight="900"
+    >
+      7
+    </text>
+  </g>
+</svg>
+
+<svg viewBox="0 0 300 120" id="snake-7">
+  <g transform="translate(0, 3) ">
+    <g transform="translate(-2, 25) scale(4.5)">
+      <path
+        name="snake"
+        fill="hsla(0, 0%, 0%, .3)"
+        stroke-width=".1"
+        stroke="hsla(0, 0%, 0%, .3)"
+        d=" 
+              M 12 0 A 8 8 0 0 1 20 8
+              L 20 10 
+              A 2 2 0 0 0 24 10 
+              L 24 6 
+              A 6 6 0 0 1 36 6 
+              L 36 10 
+              A 2 2 0 0 0 40 10 
+              L 40 6 
+              A 6 6 0 0 1 46 0 
+              L 56 0 
+              A 8 8 0 1 1 48 8 
+              L 48 6 
+              A 2 2 0 0 0 44 6
+              L 44 10 
+              A 6 6 0 0 1 32 10 
+              L 32 6 
+              A 2 2 0 0 0 28 6 
+              L 28 10 
+              A 6 6 0 0 1 22 16 
+              L 12 16 
+              A 8 8 0 0 1 12 0 
+          "
+      />
+    </g>
+    <g
+      name="house"
+      transform="translate(232, 42) scale(.35)"
+      fill="hsla(0, 0%, 0%, .35)"
+      stroke-width="0"
+      stroke="black"
+    >
+      <path
+        d="M  17 100
+               L  17  34 
+                  50   0
+                  83  34
+                  83 100
+                  56 100
+                  56  76
+                  44  76
+                  44 100
+               Z"
+      />
+    </g>
+    <use
+      href="#star"
+      x="6.6"
+      y="7.7"
+      transform="scale(8)"
+      fill="black"
+      opacity=".35"
+      stroke-width="0.1"
+      stroke="black"
+    />
+  </g>
+</svg>
+
+<svg viewBox="0 0 300 110" id="elephant-7">
+  <!-- content -->
+  <g transform="translate(0, 3) ">
+    <g transform="translate(-2, 25) scale(4.5)">
+      <path
+        name="snake"
+        fill="hsla(0, 0%, 0%, .3)"
+        stroke-width=".1"
+        stroke="hsla(0, 0%, 0%, .3)"
+        d=" 
+              M 12 0 
+              L 56 0 
+              A 8 8 0 1 1 56 16 
+              L 12 16 
+              A 8 8 0 0 1 12 0 
+          "
+      />
+    </g>
+  </g>
+
+  <g transform="translate(40, 15) scale(.75)">
+    <rect x="0" y="93" width="300" height="17" fill="hsla(0, 0%, 0%, .0)" />
+
+    <g
+      name="outer-frame"
+      transform="translate(5, 25)"
+      fill="none"
+      stroke-width="0.15"
+      stroke="black"
+    >
+      <path
+        d="
+            M 8 0 
+            L 282 0
+            A 8 8 0 0 1 290 8 
+            L 290 72
+            A 8 8 0 0 1 282 80
+            L 8 80
+            A 8 8 0 0 1 0 72
+            L 0 8
+            A 8 8 0 0 1 8 0
+            "
+        fill="hsla(0, 0%, 0%, .0)"
+        stroke-width="0"
+      />
+      <path
+        name="inner-frame"
+        d="
+            M 8 4 
+            L 282 4
+            A 4 4 0 0 1 286 8 
+            L 286 72
+            A 4 4 0 0 1 282 76
+            L 8 76
+            A 4 4 0 0 1 4 72
+            L 4 8
+            A 4 4 0 0 1 8 4
+            "
+        class="bright"
+      />
+
+      <path d="M 0 40 L 4 40" opacity="0" />
+      <path d="M 286 40 L 290 40" opacity="0" />
+
+      <path
+        name="right-pane"
+        d="
+            M 86 4 
+            L 282 4
+            A 4 4 0 0 1 286 8 
+            L 286 72
+            A 4 4 0 0 1 282 76
+            L 86 76 
+            A 135 135 0 0 1 86 4
+            "
+        class="dark-orange"
+      />
+
+      <rect
+        name="border"
+        x="80.5"
+        y="4"
+        width="0"
+        height="72"
+        class="dark dark-border"
+      />
+      <circle
+        name="big-circle"
+        cx="216"
+        cy="40"
+        r="23"
+        class="bright dark-border"
+        stroke-width="4"
+      />
+
+      <g transform="translate(2, 32)">
+        <path
+          name="snake"
+          class="dark-orange dark-border"
+          d=" 
+            M 12 0 A 8 8 0 0 1 20 8
+            L 20 10 
+            A 2 2 0 0 0 24 10 
+            L 24 6 
+            A 6 6 0 0 1 36 6 
+            L 36 10 
+            A 2 2 0 0 0 40 10 
+            L 40 6 
+            A 6 6 0 0 1 46 0 
+            L 56 0 
+            A 8 8 0 1 1 48 8 
+            L 48 6 
+            A 2 2 0 0 0 44 6
+            L 44 10 
+            A 6 6 0 0 1 32 10 
+            L 32 6 
+            A 2 2 0 0 0 28 6 
+            L 28 10 
+            A 6 6 0 0 1 22 16 
+            L 12 16 
+            A 8 8 0 0 1 12 0 
+        "
+        />
+      </g>
+
+      <circle cx="81" cy="40" r="4.5" class="dark dark-border" />
+      <use
+        name="small-star"
+        href="#star"
+        x="54"
+        y="26.7"
+        class="bright"
+        transform="scale(1.5)"
+      />
+
+      <g
+        name="logo"
+        transform="translate(120, 14) scale(0.1)"
+        class="dark dark-border"
+      >
+        <path
+          d="M 108 24
+                 A  60 60 143 0 0   0  60
+                    40 40  90 0 1  40  20
+                    10 10 180 0 1  40  40
+                    20 20 240 1 0  60  60
+                    10 10 180 0 1  80  60
+                    20 20  90 0 0 100  80
+                    10 10 143 0 1 108  96
+                    60 60  74 0 0 108  24
+                    10 10 143 0 1 100  40
+                    10 10 217 1 1 108  24"
+        />
+        <path
+          d="M 108 96
+                 A  10 10  37 0 1 100 100
+                    40 40  69 0 1  70  86.6
+                    40 40 159 0 1   0  60
+                    60 60 143 0 0 108  96"
+        />
+      </g>
+      <text
+        x="12.5"
+        y="61"
+        class="small-number dark dark-border"
+        transform="scale(2.3 1)"
+      >
+        2021
+      </text>
+      <g
+        name="wiking"
+        transform="translate(53, 35) scale(0.1)"
+        fill-rule="evenodd"
+        class="dark dark-border"
+      >
+        <path
+          d="M  20    10
+               A  37    37   1 1 0 80 10
+                  45    45   1 1 1 20 10"
+        />
+        <path
+          d="M  20    90
+               A  30.1  30.1 1 1 1 80 90
+                 145   145   1 0 1 20 90"
+        />
+      </g>
+
+      <text x="206" y="53.7" class="number dark dark-border">7</text>
+      <text
+        x="40"
+        y="42.5"
+        transform="scale(2.38, 1)"
+        class="elephant dark dark-border"
+      >
+        elephant
+      </text>
+      <!--
+
+    -->
+      <use href="#screw" x="14" y="40" />
+      <use href="#screw" x="276" y="40" />
+
+      <g
+        name="shape"
+        transform="translate(229, 142.5) rotate(-90) scale(2.4)"
+        class="bright dark-border"
+      >
+        <g
+          transform="translate(27, 3.5) scale(0.025)"
+          fill-rule="evenodd"
+          stroke-width="2"
+        >
+          <path
+            d="M  135 392
+           C  144.05  308.85  153.10  225.71  190     213
+              226.89  200.28  291.63  257.98  321.99  297
+              352.36  336.01  348.34  356.33  356.00  363
+              363.65  369.66  382.97  362.67  379.00  354.00
+              375.02  345.32  347.75  334.96  354.00  323.00
+              360.24  311.03  400.02  297.44  428.00  312.00
+              455.97  326.55  472.16  369.24  495.07  382.03
+              517.98  394.83  547.60  377.74  617.10  310.05
+              686.60  242.37  795.96  124.11  823.12  111.07
+              850.29   98.03  795.26  190.22  788.12  250.07
+              780.98  309.92  821.74  337.44  874.12  310.07
+              926.50  282.71  990.51  200.45 1040.12  222.07
+             1089.72  243.69 1124.93  369.18 1102.12  431.07
+             1079.30  492.96  998.47  491.25  948.12  482.08
+              897.77  472.91  877.91  456.27  892.12  447.07
+              906.34  437.87  954.62  436.10  957.14  426.05
+              959.66  415.99  916.42  397.65  889.14  398.05
+              861.87  398.46  850.56  417.62  851.15  430.05
+              851.75  442.48  864.23  448.19  864.16  455.06
+              864.08  461.93  851.43  469.96  825.15  479.08
+              798.87  488.20  758.95  498.40  737.13  487.09
+              715.30  475.78  711.58  442.97  692.11  434.09
+              672.64  425.20  637.43  440.24  638.11  426.08
+              638.79  411.92  675.37  368.56  702.11  323.06
+              728.85  277.57  745.76  229.93  724.10  257.06
+              702.44  284.19  642.20  386.09  594.10  423.09
+              546.00  460.09  510.04  432.20  478.09  435.09
+              446.14  437.98  418.20  471.64  384.08  482.09
+              349.95  492.54  309.65  479.78  281.07  483.08
+              252.50  486.38  235.66  505.74  239.05  474.04
+              242.43  442.33  266.05  359.56  259.99  302.99
+              253.94  246.43  218.22  216.09  209.99  263.99
+              201.77  311.90  221.04  438.06  221     479
+              220.95  519.93  201.58  475.65  176.00  470.99
+              150.41  466.34  118.61  501.32  110.00  503
+              101.38  504.67  115.96  473.05  124     449
+              132.03  424.94  133.51  408.47  135     392"
+          />
+        </g>
+      </g>
+      <g transform="translate(114, 60)" class="bright dark-border">
+        <circle cx="0" cy="0" r="3" />
+        <circle cx="12" cy="0" r="3" />
+        <circle cx="24" cy="0" r="3" />
+      </g>
+
+      <g transform="translate(28, 20)" class="dark">
+        <use href="#star" x="0" y="0" />
+        <use href="#star" x="8" y="0" />
+        <use href="#star" x="16" y="0" />
+      </g>
+
+      <g name="house" transform="translate(34, 68) scale(0.04)" class="dark">
+        <path
+          d="M  17 100
+                 L  17  34 
+                    50   0
+                    83  34
+                    83 100
+                    56 100
+                    56  76
+                    44  76
+                    44 100
+                 Z"
+        />
+      </g>
+
+      <g
+        name="house-big"
+        stroke-width="0.7"
+        class="bright dark-border"
+        transform="translate(161, 48) scale(0.20) "
+      >
+        <path
+          d="
+            M  17 100
+            L  17  34 
+                50   0
+                83  34
+                83 100
+                56 100
+                56  76
+                44  76
+                44 100
+            Z"
+        />
+      </g>
+      <g name="measure" stroke="red" stroke-width="0.1" fill="none" opacity="0">
+        <rect x="6" y="30" width="60" height="20" />
+        <line x1="36" y1="0" x2="36" y2="100" />
+        <line x1="81" y1="0" x2="81" y2="100" />
+        <line x1="126" y1="0" x2="126" y2="100" />
+        <line x1="171" y1="0" x2="171" y2="100" />
+        <line x1="216" y1="0" x2="216" y2="100" />
+        <line x1="261" y1="0" x2="261" y2="100" />
+        <line x1="290" y1="0" x2="290" y2="100" />
+
+        <line x1="0" y1="20" x2="300" y2="20" />
+        <line x1="0" y1="40" x2="300" y2="40" />
+        <line x1="0" y1="55" x2="300" y2="55" />
+        <line x1="0" y1="70" x2="300" y2="70" />
+        <line x1="0" y1="60" x2="300" y2="60" />
+      </g>
+      <defs>
+        <g id="mark" stroke="black">
+          <line x1="0" y1="-6" x2="0" y2="-30" />
+          <line x1="-6" y1="0" x2="-30" y2="0" />
+        </g>
+      </defs>
+
+      <g
+        transform="translate(4.5, 4.5)"
+        stroke="red"
+        stroke-width="0"
+        fill="none"
+      >
+        <rect x="0" y="0" width="281" height="71" opacity="0" />
+        <use href="#mark" x="0" y="0" transform="rotate(0)" />
+        <use
+          href="#mark"
+          x="0"
+          y="0"
+          transform="translate(0, 71) rotate(-90)"
+        />
+        <use
+          href="#mark"
+          x="0"
+          y="0"
+          transform="translate(281, 0) rotate(90)"
+        />
+        <use
+          href="#mark"
+          x="0"
+          y="0"
+          transform="translate(281, 71) rotate(-180)"
+        />
+      </g>
+    </g>
+  </g>
+</svg>
+
+<svg viewBox="0 0 300 70" id="text-7">
+  <text
+    x="8"
+    y="50"
+    fill="hsla(0, 0%, 100%, .8)"
+    font-size="27"
+    transform="scale(2.38, 1)"
+    font-weight="700"
+    font-family="'Play', sans-serif"
+  >
+    elephant
+  </text>
+</svg>
+
+<svg viewBox="0 0 300 20" id="text-9">
+  <text x="234" y="10" fill="hsla(0, 0%, 100%, .5)" font-size="4">
+    elephant 09/2021 chriskr
+  </text>
+</svg>
+
+<svg id="measure" viewBox="0 0 840 1188" preserveAspectRatio="none">
+  <g stroke-width="0.5" stroke="red" fill="none" opacity="0">
+    <rect x="20" y="109" width="800" height="283" />
+    <rect x="20" y="419" width="800" height="201" />
+    <rect x="20" y="728" width="800" height="201" />
+    <rect x="20" y="1038" width="800" height="41" />
+  </g>
+</svg>
+<!--
+    1188
+    283.4099
+201
+41
+109
+
+-->
